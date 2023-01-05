@@ -13,7 +13,7 @@ RUN chown -R node:node /home/node
 
 COPY --chown=node:node . /home/node/app/
 
-# Install  with dependencies
+# Install  with dependenciess
 RUN npm install
 
 
