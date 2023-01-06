@@ -4,7 +4,7 @@ FROM node:lts
 ENV NPM_CONFIG_LOGLEVEL=warn
 ENV NPM_CONFIG_COLOR=false
 
-# Run the app as the `node` user, so put it in their home directory
+# Run the app as the 'node' user, so put it in their home directories
 WORKDIR /home/node/app
 
 RUN chown -R node:node /home/node
@@ -13,14 +13,14 @@ RUN chown -R node:node /home/node
 
 COPY --chown=node:node . /home/node/app/
 
-# Install  with dependenciess
+# Install  with dependencies
 RUN npm install
 
 
 # Switch to the node user
 USER node
 
-# Expose port 3000
+# Expose port 30000
 # EXPOSE 5000
 EXPOSE 3000
 
