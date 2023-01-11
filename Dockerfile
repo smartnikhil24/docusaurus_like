@@ -20,7 +20,7 @@ RUN npm install
 # Switch to the node users
 USER node
 
-# Expose port 300000
+# Expose port 30000
 # EXPOSE 50000
 EXPOSE 3000
 
