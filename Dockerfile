@@ -21,7 +21,7 @@ RUN npm install
 USER node
 
 # Expose port 30000
-# EXPOSE 5000
+# EXPOSE 50000
 EXPOSE 3000
 
 # Start the app 
